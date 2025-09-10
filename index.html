@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Site - IT1_Scofield</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <span>E-Commerce Site - IT1_Scofield</span>
+        </div>
+        <div id="nav-links">
+            <span id="username-display" style="display:none;"></span>
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('cart')">Cart</a>
+            <a href="#" onclick="showPage('orders')">My Orders</a>
+            <a href="#" id="login-link" onclick="showPage('login')">Login</a>
+            <a href="#" id="register-link" onclick="showPage('register')">Register</a>
+            <a href="#" id="logout-link" style="display:none;" onclick="logout()">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home-page">
+            <h1>Welcome to IT1_Scofield E-Commerce Site</h1>
+            <div class="banner">
+                <img src="p1.jpg" alt="Promotional Banner" style="width:100px;height:100px;">
+            </div>
+            
+            <h2>Product List</h2>
+            <div class="products" id="product-list">
+                <!-- Products will be loaded dynamically via JS -->
+            </div>
+        </div>
+        
+        <!-- Login Page -->
+        <div id="login-page" style="display:none;">
+            <div class="auth-container">
+                <div class="auth-box">
+                    <h2>Welcome Back</h2>
+                    <p class="auth-subtitle">Please login to your account</p>
+                    <form id="login-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary btn-auth">Login</button>
+                        </div>
+                    </form>
+                    <p class="auth-link">Don't have an account? <a href="#" onclick="showPage('register')">Register here</a></p>
+                </div>
+            </div>
+        </div>
+
+<!-- Register Page -->
+<div id="register-page" style="display:none;">
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Quick Register</h2>
+            <p class="auth-subtitle">Create your account in seconds</p>
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label for="register-username">Username</label>
+                    <input type="text" id="register-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary btn-auth">Create Account</button>
+                </div>
+                <p class="form-note">* You can complete your profile information after registration</p>
+            </form>
+            <p class="auth-link">Already have an account? <a href="#" onclick="showPage('login')">Login here</a></p>
+        </div>
+    </div>
+</div>
+        <!-- Shopping Cart Page -->
+        <div id="cart-page" style="display:none;">
+            <h1>My Shopping Cart</h1>
+            <div class="cart-container">
+                <div id="cart-items" class="cart-items">
+                    <!-- Cart items will be loaded dynamically -->
+                </div>
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div id="cart-subtotal"></div>
+                    <div id="cart-shipping"></div>
+                    <div id="cart-total" class="total"></div>
+                    <button onclick="checkout()" class="btn-primary btn-checkout">Proceed to Checkout</button>
+                    <button onclick="clearCart()" class="btn-secondary">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Orders Page -->
+        <div id="orders-page" style="display:none;">
+            <h1>My Orders</h1>
+            <div id="order-list">
+                <!-- Orders will be loaded dynamically -->
+            </div>
+            <button onclick="downloadOrder()">Download All Orders</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 E-Commerce Site - IT1_Scofield</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
