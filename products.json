@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "MIRAGE",
+        "price": 19800,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "EUPHORIA",
+        "price": 12800,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p3.jpg"
+    },
+    {
+        "id": 3,
+        "name": "LUXE",
+        "price": 1880000,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p4.jpg"
+    },
+    {
+        "id": 4,
+        "name": "VIBRANCE",
+        "price": 8900,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p5.jpg"
+    },
+    {
+        "id": 5,
+        "name": "BLISS",
+        "price": 15900,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p6.jpg"
+    },
+    {
+        "id": 6,
+        "name": "HARMONY",
+        "price": 7900,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p7.jpg"
+    },
+    {
+        "id": 7,
+        "name": "ECLIPSE",
+        "price": 16900,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p8.jpg"
+    },
+    {
+        "id": 8,
+        "name": "CHROMA",
+        "price": 9900,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p9.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Serenity",
+        "price": 6900,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p10.jpg"
+    },
+    {
+        "id": 10,
+        "name": "ZENITH",
+        "price": 17900,
+        "image": "http://scofield.freesite.online/441-Scofield/ddsszzshi/p11.jpg"
+    }
+] 
